@@ -1,0 +1,22 @@
+<div class="pt-5">
+  <div class="mt-5 m-auto loginList text-center border-radius-2">
+    <h4>登入</h4>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <input type="text" [(ngModel)]="account" class="test loginInput mb-3 mt-2" placeholder="帳號">
+      </div>
+    </div>
+    <div class="row text-right">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <input class="loginInput" placeholder="密碼" [(ngModel)]="password" [type]="hide ? 'password' : 'text'">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button (click)='login()' class="btn btn-primary border-radius-2">登入</button>
+      </div>
+    </div>
+  </div>
+</div>
