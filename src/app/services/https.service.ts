@@ -101,4 +101,7 @@ export class HttpsService {
     const url = `${this.BaseUrl}/Account/PatchStudentAnswer/${feedbackId}`;
     return this.http.patch(url, Request)
   }
+  getStudentsScores(id:string): Observable<any> {
+    return this.http.get(this.BaseUrl + '/Account/AnalyzeTestReport/' + `${id}`);
+  }
 }
