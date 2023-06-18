@@ -328,5 +328,7 @@ export class StudentInfoComponent implements OnInit {
 }
 
 function compare(a: number | string, b: number | string, isAsc: boolean) {
+  a = Number(a)
+  b = Number(b)
   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
 }
